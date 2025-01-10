@@ -5,7 +5,9 @@
   */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
     behaviors {
@@ -62,7 +64,7 @@
         };
 
         toSymb {
-            bindings = <&mo 6>;
+            bindings = <&mo 7>;
             key-positions = <30 33>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
@@ -71,7 +73,7 @@
         };
 
         toIpadSC {
-            bindings = <&mo 2>;
+            bindings = <&mo 3>;
             key-positions = <32 30>;
             timeout-ms = <150>;
             slow-release;
@@ -80,7 +82,7 @@
         };
 
         toAdj {
-            bindings = <&mo 7>;
+            bindings = <&mo 8>;
             key-positions = <0 4>;
             timeout-ms = <150>;
             slow-release;
@@ -89,7 +91,7 @@
         };
 
         toFn {
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <31 33>;
             timeout-ms = <150>;
             slow-release;
@@ -114,7 +116,16 @@
 &kp Q  &kp W  &kp E  &kp R      &kp T                            &kp Y        &kp U        &kp I      &kp O    &kp P
 &kp A  &kp S  &kp D  &kp F      &kp G                            &kp H        &kp J        &kp K      &kp L    &kp SEMI
 &kp Z  &kp X  &kp C  &kp V      &kp B                            &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH
-                     &lt 8 TAB  &tapSk_holdLayer 1 LEFT_SHIFT    &lt 3 SPACE  &lt 4 ENTER
+                     &lt 1 TAB  &tapSk_holdLayer 2 LEFT_SHIFT    &lt 4 SPACE  &lt 5 ENTER
+            >;
+        };
+
+        L02 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
 
@@ -165,28 +176,19 @@
 
         symb {
             bindings = <
-  &kp EXCL      &kp AT    &kp HASH       &kp DLLR        &none    &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE  &kp STAR   
-  &kp LEFT_GUI  &kp LALT  &kp LCTRL      &kp LEFT_SHIFT  &none    &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER  &kp SLASH  
-  &kp CARET     &kp AMPS  &kp BACKSLASH  &kp PERCENT     &none    &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE  &kp EQUAL  
-                                        &none           &none    &none      &none                
+&kp EXCL      &kp AT    &kp HASH       &kp DLLR        &none    &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE  &kp STAR
+&kp LEFT_GUI  &kp LALT  &kp LCTRL      &kp LEFT_SHIFT  &none    &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER  &kp SLASH
+&kp CARET     &kp AMPS  &kp BACKSLASH  &kp PERCENT     &none    &kp PIPE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE  &kp EQUAL
+                                       &none           &none    &none      &none
             >;
         };
 
         adj {
             bindings = <
-  &none  &none  &none  &none  &none          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4    
-  &none  &none  &none  &none  &none          &none         &kp C_BRI_UP  &kp C_BRI_DEC  &none         &bt BT_CLR      
-  &none  &none  &none  &none  &none          &none         &none         &none          &none         &none 
-                       &none  &bootloader    &bootloader           &out OUT_TOG
-            >;
-        };
-
-        mods {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&none  &none  &none  &none  &none          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4
+&none  &none  &none  &none  &none          &none         &kp C_BRI_UP  &kp C_BRI_DEC  &none         &bt BT_CLR
+&none  &none  &none  &none  &none          &none         &none         &none          &none         &none
+                     &none  &bootloader    &bootloader   &out OUT_TOG
             >;
         };
     };
