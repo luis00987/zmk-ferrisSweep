@@ -149,7 +149,7 @@
             bindings = <
 &none  &none  &none  &none  &none    &kp C_VOL_UP  &kp PG_UP  &kp UP    &kp PG_DN  &kp LG(K_MUTE)
 &none  &none  &none  &none  &none    &kp HOME      &kp LEFT   &kp DOWN  &kp RIGHT  &kp END
-&none  &none  &none  &none  &none    &kp C_VOL_DN  &none      &none     &none      &kp CAPS
+&none  &none  &none  &none  &none     &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp CAPS    &none
                      &none  &none    &none         &none
             >;
         };
