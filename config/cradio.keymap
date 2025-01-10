@@ -87,6 +87,7 @@
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
+
         toFn {
             bindings = <&mo 5>;
             key-positions = <31 33>;
@@ -103,8 +104,6 @@
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
-
-
     };
 
     keymap {
@@ -121,10 +120,10 @@
 
         customWinSc {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp A   &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&kp LG(LC(F4))  &kp LG(TAB)    &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))  &kp LG(LC(D))    &none  &none  &none  &none  &none
+&kp LC(A)       &kp LC(X)      &kp LC(C)               &kp LC(V)          &kp DEL          &none  &none  &none  &none  &none
+&kp LC(Z)       &kp C_AC_HOME  &kp LG(LS(S))           &kp LG(E)          &kp LA(F4)       &none  &none  &none  &none  &none
+                                                       &none              &none            &none  &none
             >;
         };
 
