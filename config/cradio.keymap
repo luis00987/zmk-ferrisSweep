@@ -122,10 +122,10 @@
 
         L02 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&none         &none         &none             &none           &none    &none  &none           &none             &none         &none
+&sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_CONTROL  &sk LEFT_SHIFT  &none    &none  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_GUI
+&kp LEFT_GUI  &none         &none             &none           &none    &none  &none           &none             &none         &kp LEFT_GUI
+                                              &none           &none    &none  &none
             >;
         };
 
