@@ -129,19 +129,19 @@
 
         customIpadSC {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&kp LC(A)       &kp LC(X)      &kp LC(C)               &kp LC(V)          &kp DEL          &none  &none  &none  &none  &none
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&none      &none      &none                 &none      &none    &none  &none  &none  &none  &none
+&kp LG(A)  &kp LG(X)  &kp LG(C)             &kp LG(V)  &none    &none  &none  &none  &none  &none
+&kp LG(Z)  &none      &kp LG(LS(NUMBER_4))  &kp LG(H)  &none    &none  &none  &none  &none  &none
+                                            &none      &none    &none  &none
             >;
         };
 
         num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+&none         &none     &none      &none      &none    &kp MINUS  &kp N7   &kp N8  &kp N9  &kp FSLH
+&kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp PLUS   &kp N4   &kp N5  &kp N6  &kp ASTERISK
+&none         &none     &none      &none      &none    &kp N0     &kp N1   &kp N2  &kp N3  &kp EQUAL
+                                   &none      &none    &none      &kp DOT
             >;
         };
 
