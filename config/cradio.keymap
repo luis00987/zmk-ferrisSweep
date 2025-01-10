@@ -106,13 +106,7 @@
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
- escL {
-            timeout-ms = <40>;
-            bindings = <&kp ESCAPE>;
-            key-positions = <3 4>;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-        };
+
         aphostrope {
             timeout-ms = <35>;
             bindings = <&kp SQT>;
