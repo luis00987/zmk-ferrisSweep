@@ -130,7 +130,7 @@
         customIpadSC {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp LC(A)       &kp LC(X)      &kp LC(C)               &kp LC(V)          &kp DEL          &none  &none  &none  &none  &none
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                         &trans  &trans    &trans  &trans
             >;
