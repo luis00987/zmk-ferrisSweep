@@ -106,6 +106,69 @@
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
+ escL {
+            timeout-ms = <40>;
+            bindings = <&kp ESCAPE>;
+            key-positions = <3 4>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+        aphostrope {
+            timeout-ms = <35>;
+            bindings = <&kp SQT>;
+            key-positions = <8 9>;
+            layers = <0>;
+        };
+
+        backR {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 20>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0 5 3 4>;
+        };
+
+        backL {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 15>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0 5 3 4>;
+        };
+
+        questionR {
+            bindings = <&kp QUESTION>;
+            key-positions = <32 33>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
+        wordDel {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <14 15>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+            layers = <0 5 3 4>;
+        };
+
+        delR {
+            bindings = <&kp DELETE>;
+            key-positions = <7 8>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+            layers = <0 5 3 4>;
+        };
+
+        wordDelR {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <20 21>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0 5 3 4>;
+        };
     };
 
     keymap {
