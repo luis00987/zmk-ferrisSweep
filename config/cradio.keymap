@@ -143,7 +143,6 @@
             key-positions = <12 11>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
             layers = <0 5 3 4 2 7>;
         };
 
@@ -152,7 +151,7 @@
             key-positions = <26 27>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 6 4 3>;
+        
             layers = <0 5 3 4 2 7>;
         };
 
