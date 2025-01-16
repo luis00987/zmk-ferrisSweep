@@ -206,7 +206,7 @@
             bindings = <
 &none         &none     &none      &none      &none    &kp MINUS  &kp N7   &kp N8  &kp N9  &kp FSLH
 &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp PLUS   &kp N4   &kp N5  &kp N6  &kp ASTERISK
-&sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LEFT_SHIFT    &kp N0     &kp N1   &kp N2  &kp N3  &kp EQUAL
+&sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LEFT_SHIFT    &none &kp N0     &kp N1   &kp N2  &kp N3  &kp EQUAL
                                    &none      &none    &none      &kp DOT
             >;
         };
