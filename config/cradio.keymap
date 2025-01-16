@@ -206,7 +206,7 @@
             bindings = <
 &none         &none     &none      &none      &none    &kp MINUS  &kp N7   &kp N8  &kp N9  &kp FSLH
 &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp PLUS   &kp N4   &kp N5  &kp N6  &kp ASTERISK
-&none         &none     &none      &none      &none    &kp N0     &kp N1   &kp N2  &kp N3  &kp EQUAL
+&sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LEFT_SHIFT    &kp N0     &kp N1   &kp N2  &kp N3  &kp EQUAL
                                    &none      &none    &none      &kp DOT
             >;
         };
@@ -215,7 +215,7 @@
             bindings = <
 &none         &none     &none      &none      &none    &kp C_VOL_UP  &kp PG_UP   &kp UP      &kp PG_DN   &kp LG(K_MUTE)
 &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &kp HOME      &kp LEFT    &kp DOWN    &kp RIGHT   &kp END
-&none         &none     &none      &none      &none    &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp CAPS
+&sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LEFT_SHIFT      &none    &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp CAPS
                                    &none      &none    &none         &none
             >;
         };
