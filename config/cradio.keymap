@@ -203,7 +203,7 @@
 
         nav-media {
             bindings = <
-&none         &none     &none      &none           &none    &kp C_VOL_UP  &kp PG_UP   &kp UP      &kp PG_DN   &kp LG(K_MUTE)
+&none         &none     &none      &none           &none    &kp C_VOL_UP  &kp PG_UP   &kp UP      &kp PG_DN   &kp K_MUTE
 &kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LSHFT       &none    &kp HOME      &kp LEFT    &kp DOWN    &kp RIGHT   &kp END
 &sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LEFT_SHIFT  &none    &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp CAPS
                                    &none           &none    &none         &none
