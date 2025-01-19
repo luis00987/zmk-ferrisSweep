@@ -110,7 +110,7 @@
             key-positions = <16 17>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 5 3 4 2 6>;
+            layers = <0 5 4 6>;
         };
 
         backL {
