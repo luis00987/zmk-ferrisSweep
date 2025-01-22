@@ -160,6 +160,24 @@
             require-prior-idle-ms = <100>;
             layers = <0 5 4 6>;
         };
+
+        restartR {
+            bindings = <&sys_reset>;
+            key-positions = <9 8 7 6>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+            timeout-ms = <400>;
+        };
+
+        restartL {
+            bindings = <&sys_reset>;
+            key-positions = <3 2 1 0>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+            timeout-ms = <400>;
+        };
     };
 
     keymap {
@@ -178,11 +196,8 @@
             bindings = <
 &sk LEFT_GUI  &kp F7  &kp F8  &kp F9  &kp F12    &none  &none           &none      &none     &none
 &kp LEFT_GUI  &kp F4  &kp F5  &kp F6  &kp F11    &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI
-&key_repeat    &kp F1  &kp F2  &kp F3  &kp F10    &none  &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI
+&key_repeat   &kp F1  &kp F2  &kp F3  &kp F10    &none  &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI
                               &none   &none      &none  &none
-
-
-
             >;
         };
 
