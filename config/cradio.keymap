@@ -167,7 +167,7 @@
             slow-release;
             require-prior-idle-ms = <100>;
             layers = <0>;
-            timeout-ms = <400>;
+            timeout-ms = <150>;
         };
 
         restartL {
@@ -176,7 +176,7 @@
             slow-release;
             require-prior-idle-ms = <100>;
             layers = <0>;
-            timeout-ms = <400>;
+            timeout-ms = <150>;
         };
     };
 
