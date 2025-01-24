@@ -178,6 +178,15 @@
             layers = <0>;
             timeout-ms = <150>;
         };
+
+        toAdjR {
+            bindings = <&mo 7>;
+            key-positions = <5 9>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -248,10 +257,10 @@
 
         adj {
             bindings = <
-&none  &none  &none  &none  &none          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4
-&none  &none  &none  &none  &none          &none         &kp C_BRI_UP  &kp C_BRI_DEC  &none         &bt BT_CLR
-&none  &none  &none  &none  &none          &none         &none         &none          &none         &none
-                     &none  &bootloader    &bootloader   &out OUT_TOG
+&none  &none  &none  &none       &none          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4
+&none  &none  &none  &none       &none          &none         &kp C_BRI_UP  &kp C_BRI_DEC  &none         &bt BT_CLR
+&none  &none  &none  &none       &none          &none         &none         &none          &none         &out OUT_TOG
+                     &sys_reset  &bootloader    &bootloader   &sys_reset
             >;
         };
     };
