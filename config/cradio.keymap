@@ -161,57 +161,12 @@
             layers = <0 5 4 6>;
         };
 
-        restartR {
-            bindings = <&sys_reset>;
-            key-positions = <9 8 7 6>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-            timeout-ms = <150>;
-        };
-
-        restartL {
-            bindings = <&sys_reset>;
-            key-positions = <3 2 1 0>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-            timeout-ms = <150>;
-        };
-
-        toAdjR {
-            bindings = <&mo 7>;
-            key-positions = <5 9>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-        };
-
         enterL {
             bindings = <&kp ENTER>;
             key-positions = <21 22>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0>;
-        };
-
-        toGame {
-            bindings = <&to 8>;
-            key-positions = <10 19>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-        };
-
-        toNormal {
-            bindings = <&to 0>;
-            key-positions = <10 19>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-            layers = <8>;
         };
     };
 
@@ -287,15 +242,6 @@
 &none  &none  &none  &none       &none          &none         &kp C_BRI_UP  &kp C_BRI_DEC  &none         &bt BT_CLR
 &none  &none  &none  &none       &none          &none         &none         &none          &none         &out OUT_TOG
                      &sys_reset  &bootloader    &bootloader   &sys_reset
-            >;
-        };
-
-        game {
-            bindings = <
-&kp ESC    &kp Q  &kp W  &kp E      &kp R                            &kp Y        &kp U        &kp I      &kp O    &kp P
-&kp LSHFT  &kp A  &kp S  &kp D      &kp F                            &kp H        &kp J        &kp K      &kp L    &kp SEMI
-&kp LCTRL  &kp Z  &kp X  &kp C      &kp V                            &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH
-                         &lt 1 TAB  &tapSk_holdLayer 2 LEFT_SHIFT    &lt 4 SPACE  &lt 5 ENTER
             >;
         };
     };
