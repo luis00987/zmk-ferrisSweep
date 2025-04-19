@@ -50,7 +50,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
-            retro-tap;
         };
     };
 
@@ -59,7 +58,7 @@
 
         capWords {
             bindings = <&caps_word>;
-            key-positions = <13 16>;
+            key-positions = <12 17>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -167,6 +166,14 @@
             bindings = <&kp ENTER>;
             key-positions = <21 22>;
             timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
+        skShift {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <13 16>;
+            timeout-ms = <150>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
