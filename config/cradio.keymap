@@ -58,7 +58,7 @@
 
         capWords {
             bindings = <&caps_word>;
-            key-positions = <12 17>;
+            key-positions = <13 16>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -166,14 +166,6 @@
             bindings = <&kp ENTER>;
             key-positions = <21 22>;
             timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-            layers = <0>;
-        };
-
-        skShift {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <13 16>;
-            timeout-ms = <150>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
