@@ -171,11 +171,26 @@
         };
 
         Sleep {
-            bindings = <&kp C_SLEEP_MODE>;
+            bindings = <&sleep>;
             key-positions = <11 12 13 10 31>;
             timeout-ms = <150>;
             require-prior-idle-ms = <40>;
             layers = <0>;
+        };
+    };
+
+    macros {
+        sleep: sleep {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LG(X)>,
+                <&macro_wait_time 80>,
+                <&kp U>,
+                <&macro_wait_time 80>,
+                <&kp S>;
+
+            label = "SLEEP";
         };
     };
 
