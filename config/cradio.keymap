@@ -169,6 +169,14 @@
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
+
+        Sleep {
+            bindings = <&kp LG(C_SLEEP_MODE)>;
+            key-positions = <11 12 13 10 31>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
     };
 
     keymap {
