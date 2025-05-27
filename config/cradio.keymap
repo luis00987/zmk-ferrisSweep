@@ -177,6 +177,14 @@
             require-prior-idle-ms = <40>;
             layers = <0>;
         };
+
+        menu {
+            bindings = <&kp C_MENU>;
+            key-positions = <28 29>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -185,9 +193,9 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LG(X)>,
-                <&macro_wait_time 80>,
+                <&macro_wait_time 120>,
                 <&kp U>,
-                <&macro_wait_time 80>,
+                <&macro_wait_time 120>,
                 <&kp S>;
 
             label = "SLEEP";
