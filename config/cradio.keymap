@@ -179,7 +179,7 @@
         };
 
         menu {
-            bindings = <&kp C_MENU>;
+            bindings = <&kp K_CMENU>;
             key-positions = <28 29>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
