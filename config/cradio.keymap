@@ -73,8 +73,8 @@
             slow-release;
         };
 
-        toIpadSC {
-            bindings = <&mo 3>;
+        backL0 {
+            bindings = <&to 0>;
             key-positions = <32 31>;
             timeout-ms = <150>;
             slow-release;
