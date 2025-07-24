@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &sk { quick-release; };
 
@@ -58,7 +59,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPMOM";
             #binding-cells = <0>;
-            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&to 3>;
+            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&to 4>;
         };
     };
 
@@ -74,7 +75,7 @@
         };
 
         toSymb {
-            bindings = <&mo 7>;
+            bindings = <&mo 8>;
             key-positions = <30 33>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
@@ -83,7 +84,7 @@
         };
 
         toIpadSC {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <32 31>;
             timeout-ms = <150>;
             slow-release;
@@ -92,7 +93,7 @@
         };
 
         toAdj {
-            bindings = <&mo 8>;
+            bindings = <&mo 9>;
             key-positions = <0 4>;
             timeout-ms = <150>;
             slow-release;
@@ -120,7 +121,7 @@
             key-positions = <16 17>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 6 5 7>;
+            layers = <0 7 6 8>;
         };
 
         backL {
@@ -128,7 +129,7 @@
             key-positions = <12 13>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 6 5 7>;
+            layers = <0 7 6 8>;
         };
 
         questionR {
@@ -152,7 +153,7 @@
             key-positions = <26 27>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 6 5 7>;
+            layers = <0 7 6 8>;
         };
 
         wordDelR {
@@ -168,7 +169,7 @@
             key-positions = <22 23>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 6 5 7>;
+            layers = <0 7 6 8>;
         };
 
         enterL {
@@ -219,7 +220,7 @@
 &kp Q            &kp W            &kp E                &kp R              &kp T      &kp Y        &kp U              &kp I                &kp O            &kp P
 &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G      &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON
 &kp Z            &kp X            &kp C                &kp V              &kp B      &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH
-                                                       &lt 3 TAB          &tapMom    &lt 5 SPACE  &lt 6 ENTER
+                                                       &lt 4 TAB          &tapMom    &lt 6 SPACE  &lt 7 ENTER
             >;
         };
 
@@ -235,9 +236,18 @@
         customMom {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &to 3   &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                         &trans  &trans    &trans  &trans
+            >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans    &mkp MB4  &msc SCRL_UP    &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &mkp MB2  &mkp MB3  &mkp MB1        &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &mkp MB5  &msc SCRL_DOWN  &trans    &trans  &trans  &trans  &trans  &trans
+                            &trans          &to 0     &trans  &trans
             >;
         };
 
@@ -292,6 +302,15 @@
 &none  &none  &none  &none  &none          &none         &kp C_BRI_UP  &kp C_BRI_DEC  &none         &bt BT_CLR
 &none  &none  &none  &none  &none          &none         &none         &none          &none         &out OUT_TOG
                      &none  &bootloader    &bootloader   &none
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
     };
