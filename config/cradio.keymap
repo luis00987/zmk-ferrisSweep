@@ -207,19 +207,19 @@
 
         L0 {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R    &kp T                            &kp Y        &kp U    &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F    &kp G                            &kp H        &kp J    &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C  &kp V    &kp B                            &kp N        &kp M    &kp COMMA  &kp DOT  &kp FSLH
-                     &kp TAB  &tapSk_holdLayer 3 LEFT_SHIFT    &lt 5 SPACE  &kp RET
+&kp Q  &kp W  &kp E  &kp R    &kp T                            &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F    &kp G                            &kp H        &kp J  &kp K      &kp L    &kp SEMI
+&kp Z  &kp X  &kp C  &kp V    &kp B                            &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH
+                     &kp TAB  &tapSk_holdLayer 3 LEFT_SHIFT    &lt 5 SPACE  &to 1
             >;
         };
 
         L1 {
             bindings = <
-&none  &none  &none         &kp ESC   &none      &none    &kp ESCAPE  &kp UP        &kp SQT    &none
-&none  &none  &none         &none     &none      &none    &kp LEFT    &kp DOWN      &kp RIGHT  &none
-&none  &none  &kp LC(BSPC)  &kp BSPC  &kp DEL    &kp DEL  &kp BSPC    &kp LC(BSPC)  &kp ENTER  &kp QUESTION
-                            &none     &none      &to 0    &to 2
+&sk LEFT_WIN  &sk LALT  &sk LCTRL     &sk LSHFT  &none      &none    &sk LSHFT  &sk LCTRL     &sk LALT   &sk LEFT_WIN
+&kp LEFT_WIN  &kp LALT  &kp LCTRL     &kp LSHFT  &kp ESC    &kp SQT  &kp LSHFT  &kp LCTRL     &kp LALT   &kp LEFT_WIN
+&none         &none     &kp LC(BSPC)  &kp BSPC   &kp DEL    &kp DEL  &kp BSPC   &kp LC(BSPC)  &kp ENTER  &kp QUESTION
+                                      &none      &none      &to 0    &to 2
             >;
         };
 
