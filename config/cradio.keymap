@@ -65,7 +65,7 @@
         };
 
         toSymb {
-            bindings = <&mo 6>;
+            bindings = <&mo 7>;
             key-positions = <30 33>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
@@ -83,7 +83,7 @@
         };
 
         toAdj {
-            bindings = <&mo 7>;
+            bindings = <&mo 8>;
             key-positions = <0 4>;
             timeout-ms = <150>;
             slow-release;
@@ -111,7 +111,7 @@
             key-positions = <16 17>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 5 4 6>;
+            layers = <0 6 5 7>;
         };
 
         backL {
@@ -119,7 +119,7 @@
             key-positions = <12 13>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 5 4 6>;
+            layers = <0 6 5 7>;
         };
 
         questionR {
@@ -143,7 +143,7 @@
             key-positions = <26 27>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 5 4 6>;
+            layers = <0 6 5 7>;
         };
 
         wordDelR {
@@ -159,7 +159,7 @@
             key-positions = <22 23>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <0 5 4 6>;
+            layers = <0 6 5 7>;
         };
 
         enterL {
@@ -210,7 +210,16 @@
 &kp Q  &kp W  &kp E  &kp R    &kp T                            &kp Y        &kp U    &kp I      &kp O    &kp P
 &kp A  &kp S  &kp D  &kp F    &kp G                            &kp H        &kp J    &kp K      &kp L    &kp SEMI
 &kp Z  &kp X  &kp C  &kp V    &kp B                            &kp N        &kp M    &kp COMMA  &kp DOT  &kp FSLH
-                     &kp TAB  &tapSk_holdLayer 2 LEFT_SHIFT    &lt 4 SPACE  &kp RET
+                     &kp TAB  &tapSk_holdLayer 3 LEFT_SHIFT    &lt 5 SPACE  &kp RET
+            >;
+        };
+
+        L1 {
+            bindings = <
+&none  &none  &none         &kp UP    &none        &none     &kp UP    &none         &none  &none
+&none  &none  &kp LEFT      &kp DOWN  &kp RIGHT    &kp LEFT  &kp DOWN  &kp RIGHT     &none  &none
+&none  &none  &kp LC(BSPC)  &kp BSPC  &kp DEL      &kp DEL   &kp BSPC  &kp LC(BSPC)  &none  &none
+                            &none     &none        &none     &none
             >;
         };
 
