@@ -216,10 +216,10 @@
 
         L1 {
             bindings = <
-&none  &none  &none         &kp UP    &none        &none     &kp UP    &none         &none  &none
-&none  &none  &kp LEFT      &kp DOWN  &kp RIGHT    &kp LEFT  &kp DOWN  &kp RIGHT     &none  &none
-&none  &none  &kp LC(BSPC)  &kp BSPC  &kp DEL      &kp DEL   &kp BSPC  &kp LC(BSPC)  &none  &none
-                            &none     &none        &none     &none
+&none  &none  &none         &kp ESC   &none      &none    &kp ESCAPE  &kp UP        &kp SQT    &none
+&none  &none  &none         &none     &none      &none    &kp LEFT    &kp DOWN      &kp RIGHT  &none
+&none  &none  &kp LC(BSPC)  &kp BSPC  &kp DEL    &kp DEL  &kp BSPC    &kp LC(BSPC)  &kp ENTER  &kp QUESTION
+                            &none     &none      &to 0    &to 2
             >;
         };
 
