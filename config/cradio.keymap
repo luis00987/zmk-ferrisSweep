@@ -79,7 +79,6 @@
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
         toAdj {
@@ -219,7 +218,7 @@
 &sk LEFT_WIN  &sk LALT  &sk LCTRL     &sk LSHFT  &none      &none    &sk LSHFT  &sk LCTRL     &sk LALT   &sk LEFT_WIN
 &kp LEFT_WIN  &kp LALT  &kp LCTRL     &kp LSHFT  &kp ESC    &kp SQT  &kp LSHFT  &kp LCTRL     &kp LALT   &kp LEFT_WIN
 &none         &none     &kp LC(BSPC)  &kp BSPC   &kp DEL    &kp DEL  &kp BSPC   &kp LC(BSPC)  &kp ENTER  &kp QUESTION
-                                      &none      &none      &to 0    &to 2
+                                      &none      &none      &to 0    &none
             >;
         };
 
