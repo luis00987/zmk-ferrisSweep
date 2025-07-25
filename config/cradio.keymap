@@ -1,10 +1,10 @@
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 #include <dt-bindings/zmk/pointing.h>
 
 &sk { quick-release; };
@@ -196,21 +196,6 @@
         };
     };
 
-    macros {
-        sleep: sleep {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LG(X)>,
-                <&macro_wait_time 120>,
-                <&kp U>,
-                <&macro_wait_time 120>,
-                <&kp S>;
-
-            label = "SLEEP";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -234,10 +219,10 @@
 
         fn {
             bindings = <
-&sk HOME      &kp F7  &kp F8  &kp F9  &kp F12    &none            &none           &none      &none     &none
-&kp LEFT_GUI  &kp F4  &kp F5  &kp F6  &kp F11    &kp PRINTSCREEN  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI
-&key_repeat   &kp F1  &kp F2  &kp F3  &kp F10    &kp CAPS         &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI
-                              &none   &none      &none            &none
+&sk HOME     &kp F7  &kp F8  &kp F9  &kp F12    &none            &none           &none      &none     &none
+&key_repeat  &kp F4  &kp F5  &kp F6  &kp F11    &kp PRINTSCREEN  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT  &kp LEFT_GUI
+&none        &kp F1  &kp F2  &kp F3  &kp F10    &kp CAPS         &sk LEFT_SHIFT  &sk LCTRL  &sk LALT  &sk LEFT_GUI
+                             &none   &none      &none            &none
             >;
         };
 
