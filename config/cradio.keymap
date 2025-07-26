@@ -195,7 +195,7 @@
         };
 
         backto0 {
-            bindings = <&mo 0>;
+            bindings = <&to 0>;
             key-positions = <10 14>;
             timeout-ms = <150>;
             slow-release;
