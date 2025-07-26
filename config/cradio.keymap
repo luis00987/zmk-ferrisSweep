@@ -229,8 +229,8 @@
             bindings = <
 &kp LG(LC(F4))  &kp LG(TAB)    &kp LC(LG(LEFT_ARROW))  &kp LC(LG(RIGHT))  &kp LG(LC(D))    &none  &none  &none  &none  &none
 &kp LC(A)       &kp LC(X)      &kp LC(C)               &kp LC(V)          &kp LG(E)        &none  &none  &none  &none  &none
-&kp LC(Z)       &kp C_AC_HOME  &kp LG(LS(S))           &kp LG(D)          &kp LA(F4)       &none  &none  &none  &none  &none
-                                                       &kp LS(LC(H))      &none            &none  &none
+&kp LC(Z)       &kp C_AC_HOME  &kp LG(LS(S))           &kp LG(D)          &kp LC(LS(H))    &none  &none  &none  &none  &none
+                                                       &kp LA(F4)         &none            &none  &none
             >;
         };
 
