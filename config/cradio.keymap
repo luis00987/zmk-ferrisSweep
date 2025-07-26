@@ -92,12 +92,11 @@
         };
 
         toAdj {
-            bindings = <&mo 7>;
+            bindings = <&Adjust>;
             key-positions = <0 4>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
         escL {
@@ -196,6 +195,16 @@
         };
     };
 
+    macros {
+        Adjust: Adjust {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&macro_wait_time 100>, <&mo 7>;
+
+            label = "ADJUST";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -280,12 +289,12 @@
             >;
         };
 
-        mouse-shortcuts {
+        mouse-jwHightlight {
             bindings = <
-&none  &kp F1    &kp F2    &kp F3    &none    &none  &none  &none  &none  &none
-&none  &mkp MB2  &mkp MB3  &mkp MB1  &none    &none  &none  &none  &none  &none
-&none  &none     &none     &none     &none    &none  &none  &none  &none  &none
-                           &none     &to 0    &none  &none
+&none  &none     &none     &none     &none       &none  &none  &none  &none  &none
+&none  &kp F3    &kp F2    &kp F1    &none       &none  &none  &none  &none  &none
+&none  &mkp MB2  &mkp MB3  &mkp MB1  &none       &none  &none  &none  &none  &none
+                           &mkp MB2  &mkp MB1    &none  &none
             >;
         };
     };
