@@ -92,7 +92,7 @@
         };
 
         toAdj {
-            bindings = <&Adjust>;
+            bindings = <&mo 7>;
             key-positions = <0 4>;
             timeout-ms = <150>;
             slow-release;
@@ -192,6 +192,14 @@
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             layers = <0>;
+        };
+
+        backto0 {
+            bindings = <&mo 0>;
+            key-positions = <10 14>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
     };
 
