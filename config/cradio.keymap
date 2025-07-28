@@ -192,16 +192,18 @@
 
         toFn {
             bindings = <&mo 2>;
-            key-positions = <13 30>;
+            key-positions = <13 31>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
+            slow-release;
         };
 
         toNav {
             bindings = <&mo 5>;
-            key-positions = <16 33>;
+            key-positions = <16 32>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
+            slow-release;
         };
     };
 
