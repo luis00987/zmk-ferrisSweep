@@ -172,8 +172,8 @@
             slow-release;
         };
 
-        toNav {
-            bindings = <&mo 5>;
+        toNum {
+            bindings = <&mo 4>;
             key-positions = <16 32>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
@@ -199,7 +199,7 @@
 &kp Q  &kp W  &kp E  &kp R      &kp T                            &kp Y        &kp U        &kp I      &kp O    &kp P
 &kp A  &kp S  &kp D  &kp F      &kp G                            &kp H        &kp J        &kp K      &kp L    &kp SEMI
 &kp Z  &kp X  &kp C  &kp V      &kp B                            &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH
-                     &lt 8 TAB  &tapSk_holdLayer 1 LEFT_SHIFT    &lt 4 SPACE  &lt 8 ENTER
+                     &lt 8 TAB  &tapSk_holdLayer 1 LEFT_SHIFT    &lt 5 SPACE  &lt 8 ENTER
             >;
         };
 
