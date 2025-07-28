@@ -113,7 +113,6 @@
             key-positions = <16 17>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <5 4 6>;
         };
 
         backL {
@@ -121,7 +120,6 @@
             key-positions = <12 13>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <5 4 6>;
         };
 
         questionR {
