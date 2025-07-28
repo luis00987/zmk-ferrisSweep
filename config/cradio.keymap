@@ -243,8 +243,8 @@
         num {
             bindings = <
 &none         &none     &none      &none           &none    &kp PLUS   &kp N7   &kp N8  &kp N9  &kp ASTERISK
-&kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LSHFT       &none    &kp MINUS  &kp N4   &kp N5  &kp N6  &kp SLASH
-&sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LEFT_SHIFT  &none    &kp N0     &kp N1   &kp N2  &kp N3  &kp EQUAL
+&sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LSHFT       &none    &kp MINUS  &kp N4   &kp N5  &kp N6  &kp SLASH
+&kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp N0     &kp N1   &kp N2  &kp N3  &kp EQUAL
                                    &none           &none    &none      &kp DOT
             >;
         };
@@ -252,8 +252,8 @@
         nav-media {
             bindings = <
 &none         &none     &none      &none           &none    &kp C_VOL_UP  &kp PG_UP   &kp UP      &kp PG_DN   &kp C_MUTE
-&kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LSHFT       &none    &kp HOME      &kp LEFT    &kp DOWN    &kp RIGHT   &kp END
-&sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LEFT_SHIFT  &none    &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp K_CMENU
+&sk LEFT_GUI  &sk LALT  &sk LCTRL  &sk LSHFT       &none    &kp HOME      &kp LEFT    &kp DOWN    &kp RIGHT   &kp END
+&kp LEFT_GUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &none    &kp C_VOL_DN  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp K_CMENU
                                    &none           &none    &none         &none
             >;
         };
