@@ -189,6 +189,20 @@
             slow-release;
             require-prior-idle-ms = <100>;
         };
+
+        toFn {
+            bindings = <&mo 2>;
+            key-positions = <13 30>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+        };
+
+        toNav {
+            bindings = <&mo 5>;
+            key-positions = <16 33>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     macros {
