@@ -141,7 +141,6 @@
             key-positions = <26 27>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <5 4 6>;
         };
 
         wordDelR {
@@ -156,35 +155,12 @@
             key-positions = <22 23>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
-            layers = <5 4 6>;
         };
 
         enterL {
             bindings = <&kp ENTER>;
             key-positions = <21 22>;
             timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-        };
-
-        Sleep {
-            bindings = <&kp K_SLEEP>;
-            key-positions = <11 12 13 10 31>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <40>;
-        };
-
-        menu {
-            bindings = <&kp CAPS>;
-            key-positions = <28 29>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <100>;
-        };
-
-        backto0 {
-            bindings = <&to 0>;
-            key-positions = <10 14>;
-            timeout-ms = <150>;
-            slow-release;
             require-prior-idle-ms = <100>;
         };
 
