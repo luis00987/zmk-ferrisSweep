@@ -168,7 +168,7 @@
         };
 
         toFn {
-            bindings = <&mo 2>;
+            bindings = <&mo 8>;
             key-positions = <13 31>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
@@ -176,11 +176,59 @@
         };
 
         toNum {
-            bindings = <&mo 5>;
+            bindings = <&mo 8>;
             key-positions = <16 32>;
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
             slow-release;
+        };
+
+        winL {
+            bindings = <&sk LEFT_WIN>;
+            key-positions = <25 26>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        winR {
+            bindings = <&sk LEFT_WIN>;
+            key-positions = <24 23>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        CtrlR {
+            bindings = <&sk LEFT_CONTROL>;
+            key-positions = <15 16>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        CtrlL {
+            bindings = <&sk LEFT_CONTROL>;
+            key-positions = <13 14>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        AltR {
+            bindings = <&sk LEFT_CONTROL>;
+            key-positions = <5 6>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        AltL {
+            bindings = <&sk LEFT_CONTROL>;
+            key-positions = <4 3>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <100>;
         };
     };
 
@@ -202,7 +250,7 @@
 &kp Q  &kp W  &kp E  &kp R      &kp T                            &kp Y        &kp U        &kp I      &kp O    &kp P
 &kp A  &kp S  &kp D  &kp F      &kp G                            &kp H        &kp J        &kp K      &kp L    &kp SEMI
 &kp Z  &kp X  &kp C  &kp V      &kp B                            &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH
-                     &lt 8 TAB  &tapSk_holdLayer 1 LEFT_SHIFT    &lt 4 SPACE  &lt 8 ENTER
+                     &lt 2 TAB  &tapSk_holdLayer 1 LEFT_SHIFT    &lt 4 SPACE  &lt 5 ENTER
             >;
         };
 
