@@ -180,25 +180,17 @@
             layers = <0>;
         };
 
-        Sleep {
-            bindings = <&kp K_SLEEP>;
-            key-positions = <11 12 13 10 31>;
+        LhandOHM {
+            bindings = <&mo 8>;
+            key-positions = <13 31>;
             timeout-ms = <150>;
-            require-prior-idle-ms = <40>;
-            layers = <0>;
-        };
-
-        menu {
-            bindings = <&kp CAPS>;
-            key-positions = <28 29>;
-            timeout-ms = <40>;
+            slow-release;
             require-prior-idle-ms = <100>;
-            layers = <0>;
         };
 
-        backto0 {
-            bindings = <&to 0>;
-            key-positions = <10 14>;
+        RhandOHM {
+            bindings = <&mo 8>;
+            key-positions = <16 32>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
