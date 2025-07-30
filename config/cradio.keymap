@@ -286,8 +286,8 @@
         oneHandMods {
             bindings = <
 &trans        &trans    &trans     &trans     &trans    &trans  &trans     &trans     &trans    &trans
+&sk LEFT_WIN  &sk LALT  &sk LCTRL  &sk LSHFT  &trans    &trans  &sk LSHFT  &sk LCTRL  &sk LALT  &sk LEFT_WIN
 &kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LEFT_WIN
-&kp LEFT_WIN  &sk LALT  &sk LCTRL  &sk LSHFT  &trans    &trans  &sk LSHFT  &sk LCTRL  &sk LALT  &sk LEFT_WIN
                                    &trans     &trans    &trans  &trans
             >;
         };
