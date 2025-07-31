@@ -49,7 +49,7 @@
             bindings = <&mo>, <&sk>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <280>;
             flavor = "balanced";
             hold-while-undecided;
         };
@@ -60,7 +60,7 @@
             #binding-cells = <0>;
             bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 9 LEFT_WIN>;
 
-            tapping-term-ms = <350>;
+            tapping-term-ms = <280>;
         };
     };
 
