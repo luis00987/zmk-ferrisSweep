@@ -195,14 +195,6 @@
             slow-release;
             require-prior-idle-ms = <100>;
         };
-
-        mouseLayer {
-            bindings = <&mo 9>;
-            key-positions = <12 31>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
     };
 
     keymap {
