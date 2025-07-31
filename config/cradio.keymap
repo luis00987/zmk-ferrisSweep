@@ -52,6 +52,7 @@
             tapping-term-ms = <280>;
             flavor = "balanced";
             hold-while-undecided;
+            retro-tap;
         };
 
         LTHUMB: LTHUMB {
