@@ -183,7 +183,7 @@
         LhandOHM {
             bindings = <&mo 8>;
             key-positions = <13 31>;
-            timeout-ms = <150>;
+            timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
@@ -191,7 +191,7 @@
         RhandOHM {
             bindings = <&mo 8>;
             key-positions = <16 32>;
-            timeout-ms = <150>;
+            timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
