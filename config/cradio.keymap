@@ -13,6 +13,8 @@
     release-after-ms = <800>;
 };
 
+&lt { flavor = "balanced"; };
+
 / {
     behaviors {
         hmr: hmr {
