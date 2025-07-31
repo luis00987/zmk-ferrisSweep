@@ -59,6 +59,7 @@
             flavor = "balanced";
             hold-while-undecided;
             retro-tap;
+            require-prior-idle-ms = <40>;
         };
 
         LTHUMB: LTHUMB {
