@@ -58,7 +58,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LTHUMB";
             #binding-cells = <0>;
-            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 0 LEFT_WIN>;
+            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 9 LEFT_WIN>;
 
             tapping-term-ms = <350>;
         };
@@ -210,10 +210,10 @@
 
         L0 {
             bindings = <
-&kp Q            &kp W            &kp E                &kp R              &kp T                            &kp Y        &kp U              &kp I                &kp O            &kp P
-&hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                            &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON
-&kp Z            &kp X            &kp C                &kp V              &kp B                            &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH
-                                                       &lt 2 TAB          &tapSk_holdLayer 1 LEFT_SHIFT    &lt 4 SPACE  &lt 5 ENTER
+&kp Q            &kp W            &kp E                &kp R              &kp T      &kp Y        &kp U              &kp I                &kp O            &kp P
+&hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G      &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON
+&kp Z            &kp X            &kp C                &kp V              &kp B      &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH
+                                                       &lt 2 TAB          &LTHUMB    &lt 4 SPACE  &lt 5 ENTER
             >;
         };
 
