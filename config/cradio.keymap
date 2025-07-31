@@ -13,7 +13,10 @@
     release-after-ms = <800>;
 };
 
-&lt { flavor = "balanced"; };
+&lt {
+    flavor = "balanced";
+    require-prior-idle-ms = <40>;
+};
 
 / {
     behaviors {
