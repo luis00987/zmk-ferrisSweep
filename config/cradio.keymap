@@ -10,6 +10,7 @@
 &sk {
     quick-release;
     lazy;
+    release-after-ms = <800>;
 };
 
 / {
@@ -61,7 +62,7 @@
             #binding-cells = <0>;
             bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 9 LEFT_WIN>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <320>;
         };
     };
 
