@@ -63,7 +63,7 @@
             label = "LTHUMB";
             #binding-cells = <0>;
             bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 9 LEFT_WIN>;
-            flavor = "balanced";
+
             tapping-term-ms = <380>;
         };
     };
