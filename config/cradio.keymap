@@ -57,7 +57,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <100>;
             flavor = "tap-preferred";
-            hold-while-undecided;
             retro-tap;
         };
 
