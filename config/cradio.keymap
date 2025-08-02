@@ -56,8 +56,9 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <80>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             retro-tap;
+            hold-while-undecided;
         };
 
         LTHUMB: LTHUMB {
