@@ -64,20 +64,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LTHUMB";
             #binding-cells = <0>;
-            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&holdTap 9 LEFT_WIN>;
+            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 9 LEFT_WIN>;
 
             tapping-term-ms = <380>;
-        };
-
-        holdTap: holdTap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            label = "HOLDTAP";
-            bindings = <&to>, <&kp>;
-
-            tapping-term-ms = <120>;
-            flavor = "tap-preferred";
-            hold-while-undecided;
         };
     };
 
@@ -208,6 +197,14 @@
         RhandOHM {
             bindings = <&mo 8>;
             key-positions = <16 32>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        toMouse {
+            bindings = <&mo 9>;
+            key-positions = <12 31>;
             timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <100>;
