@@ -76,7 +76,7 @@
             bindings = <&to>, <&kp>;
 
             tapping-term-ms = <120>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             require-prior-idle-ms = <40>;
             hold-while-undecided;
         };
