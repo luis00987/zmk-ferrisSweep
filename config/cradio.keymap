@@ -201,6 +201,14 @@
             slow-release;
             require-prior-idle-ms = <100>;
         };
+
+        toMouse {
+            bindings = <&mo 9>;
+            key-positions = <12 31>;
+            timeout-ms = <40>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     macros {
