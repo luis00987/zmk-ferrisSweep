@@ -64,7 +64,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LTHUMB";
             #binding-cells = <0>;
-            bindings = <&tapSk_holdLayer 9 LEFT_SHIFT>, <&lt 2 LEFT_WIN>;
+            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 9 LEFT_WIN>;
 
             tapping-term-ms = <380>;
         };
