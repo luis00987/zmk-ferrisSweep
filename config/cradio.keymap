@@ -130,7 +130,7 @@
         questionR {
             bindings = <&kp QUESTION>;
             key-positions = <27 28>;
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
