@@ -192,7 +192,7 @@
         };
 
         toMouse {
-            bindings = <&to 9>;
+            bindings = <&clickToMouse>;
             key-positions = <12 31 13>;
             timeout-ms = <90>;
             slow-release;
