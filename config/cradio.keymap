@@ -207,7 +207,7 @@
             require-prior-idle-ms = <100>;
         };
 
-        toMouse {
+        moMouse {
             bindings = <&mo 9>;
             key-positions = <11 12 13 31>;
             timeout-ms = <150>;
