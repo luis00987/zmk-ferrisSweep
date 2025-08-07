@@ -193,8 +193,8 @@
 
         toMouse {
             bindings = <&to 9>;
-            key-positions = <12 31>;
-            timeout-ms = <40>;
+            key-positions = <12 31 13>;
+            timeout-ms = <90>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
@@ -205,6 +205,15 @@
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
+        };
+    };
+
+    macros {
+        clickToMouse: clickToMouse {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB1 &to 9>;
+            label = "CLICKTOMOUSE";
         };
     };
 
@@ -294,10 +303,10 @@
 
         mouse {
             bindings = <
-&none             &kp F1    &kp F2    &kp F3    &kp F4    &none  &none  &none  &none  &none
+&none             &none     &none     &none     &none     &none  &none  &none  &none  &none
 &kp LEFT_SHIFT    &mkp MB2  &mkp MB3  &mkp MB1  &kp F6    &none  &none  &none  &none  &none
 &kp LEFT_CONTROL  &none     &none     &none     &none     &none  &none  &none  &none  &none
-                                      &to 9     &to 0     &none  &none
+                                      &none     &to 0     &none  &none
             >;
         };
     };
