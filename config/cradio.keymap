@@ -130,7 +130,7 @@
         questionR {
             bindings = <&kp QUESTION>;
             key-positions = <27 28>;
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
@@ -205,15 +205,6 @@
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
-        };
-    };
-
-    macros {
-        clickToMouse: clickToMouse {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&mkp MB1 &to 9>;
-            label = "CLICKTOMOUSE";
         };
     };
 
