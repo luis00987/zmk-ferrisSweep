@@ -201,7 +201,7 @@
 
         toMouse {
             bindings = <&to 9>;
-            key-positions = <11 12 13>;
+            key-positions = <11 12 13 30>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
