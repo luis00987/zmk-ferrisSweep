@@ -208,7 +208,7 @@
         };
 
         accent {
-            bindings = <&mo 7>;
+            bindings = <&sl 7>;
             key-positions = <10 14>;
             timeout-ms = <150>;
             slow-release;
