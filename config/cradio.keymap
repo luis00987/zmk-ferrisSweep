@@ -64,7 +64,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LTHUMB";
             #binding-cells = <0>;
-            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 9 LEFT_WIN>;
+            bindings = <&tapSk_holdLayer 1 LEFT_SHIFT>, <&lt 3 LEFT_WIN>;
 
             tapping-term-ms = <380>;
         };
@@ -130,8 +130,8 @@
         questionR {
             bindings = <&kp QUESTION>;
             key-positions = <27 28>;
-            timeout-ms = <60>;
-            require-prior-idle-ms = <100>;
+            timeout-ms = <70>;
+            require-prior-idle-ms = <80>;
             layers = <0>;
         };
 
@@ -187,14 +187,6 @@
             bindings = <&mo 8>;
             key-positions = <16 32>;
             timeout-ms = <40>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-
-        toIpad {
-            bindings = <&mo 3>;
-            key-positions = <31 32>;
-            timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
