@@ -210,7 +210,7 @@
         accent {
             bindings = <&sl 7>;
             key-positions = <10 14>;
-            timeout-ms = <150>;
+            timeout-ms = <40>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
