@@ -303,10 +303,10 @@
 
         leftNav-Media {
             bindings = <
-&none      &kp HOME    &kp UP      &kp END     &kp C_VOLUME_UP    &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp LEFT    &kp DOWN    &kp RIGHT   &kp C_MUTE         &trans  &trans  &trans  &trans  &trans
-&kp RET    &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp C_VOL_DN       &trans  &trans  &trans  &trans  &trans
-                                   &trans      &trans             &trans  &trans
+&none           &kp HOME    &kp UP      &kp END     &kp C_VOLUME_UP    &trans  &trans  &trans  &trans  &trans
+&kp LEFT_WIN    &kp LEFT    &kp DOWN    &kp RIGHT   &kp C_MUTE         &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp C_VOL_DN       &trans  &trans  &trans  &trans  &trans
+                                        &trans      &trans             &trans  &trans
             >;
         };
     };
