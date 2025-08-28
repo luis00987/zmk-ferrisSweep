@@ -198,6 +198,14 @@
             slow-release;
             require-prior-idle-ms = <100>;
         };
+
+        toLeftMedia-Nav {
+            bindings = <&mo 10>;
+            key-positions = <31 1 2 3>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     keymap {
