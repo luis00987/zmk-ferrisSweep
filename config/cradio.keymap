@@ -88,6 +88,14 @@
             slow-release;
         };
 
+        toAdj {
+            bindings = <&mo 7>;
+            key-positions = <0 4>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
         escL {
             timeout-ms = <40>;
             bindings = <&kp ESCAPE>;
@@ -183,25 +191,17 @@
             require-prior-idle-ms = <100>;
         };
 
+        toMouse {
+            bindings = <&to 9>;
+            key-positions = <11 12 13 30>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
         moMouse {
             bindings = <&mo 9>;
             key-positions = <11 12 13 31>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-
-        toAdj {
-            bindings = <&mo 7>;
-            key-positions = <11 12 13 31 10>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-
-        toLeftMedia-Nav {
-            bindings = <&mo 10>;
-            key-positions = <31 1 2 3>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -276,10 +276,10 @@
 
         adj {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3   &bt BT_SEL 4    &none        &none  &none  &none  &none
-&none         &none         &kp C_BRIGHTNESS_DEC  &kp C_BRI_INC  &none           &none        &none  &none  &none  &none
-&none         &none         &none                 &none          &out OUT_TOG    &none        &none  &none  &none  &none
-                                                  &bt BT_CLR     &bootloader     &bootloader  &none
+&none  &none  &none  &kp C_BRI_DEC  &kp C_BRI_UP          &none         &none &none  &none         &bt BT_CLR
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4         &none  &none  &none  &none  &none         
+&none  &none  &none  &none  &none          &none         &none         &none          &none         &out OUT_TOG
+                     &bt BT_CLR  &bootloader    &bootloader   &none
             >;
         };
 
@@ -303,10 +303,10 @@
 
         leftNav-Media {
             bindings = <
-&none           &kp HOME    &kp UP      &kp END     &kp C_VOLUME_UP    &trans  &trans  &trans  &trans  &trans
-&kp LEFT_WIN    &kp LEFT    &kp DOWN    &kp RIGHT   &kp C_MUTE         &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp C_VOL_DN       &trans  &trans  &trans  &trans  &trans
-                                        &trans      &trans             &trans  &trans
+&none      &kp HOME    &kp UP      &kp END     &kp C_VOLUME_UP    &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp LEFT    &kp DOWN    &kp RIGHT   &kp C_MUTE         &trans  &trans  &trans  &trans  &trans
+&kp RET    &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp C_VOL_DN       &trans  &trans  &trans  &trans  &trans
+                                   &trans      &trans             &trans  &trans
             >;
         };
     };
