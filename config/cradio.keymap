@@ -56,7 +56,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <80>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             hold-while-undecided;
         };
 
@@ -86,14 +86,6 @@
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
             slow-release;
-        };
-
-        toAdj {
-            bindings = <&mo 7>;
-            key-positions = <0 4>;
-            timeout-ms = <150>;
-            slow-release;
-            require-prior-idle-ms = <100>;
         };
 
         escL {
@@ -191,17 +183,25 @@
             require-prior-idle-ms = <100>;
         };
 
-        toMouse {
-            bindings = <&to 9>;
-            key-positions = <11 12 13 30>;
+        moMouse {
+            bindings = <&mo 9>;
+            key-positions = <11 12 13 31>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
         };
 
-        moMouse {
-            bindings = <&mo 9>;
-            key-positions = <11 12 13 31>;
+        toAdj {
+            bindings = <&mo 7>;
+            key-positions = <0 4>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        toLeftMedia-Nav {
+            bindings = <&mo 10>;
+            key-positions = <31 1 2 3>;
             timeout-ms = <150>;
             slow-release;
             require-prior-idle-ms = <100>;
@@ -213,10 +213,10 @@
 
         L0 {
             bindings = <
-&kp Q            &kp W            &kp E                &kp R              &kp T      &kp Y        &kp U              &kp I                &kp O            &kp P
-&hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G      &kp H        &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_GUI SEMICOLON
-&kp Z            &kp X            &kp C                &kp V              &kp B      &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH
-                                                       &lt 2 TAB          &LTHUMB    &lt 4 SPACE  &lt 5 ENTER
+&kp Q              &kp W            &kp E                &kp R            &kp T      &kp Y        &kp U            &kp I                &kp O            &kp P
+&hml LEFT_SHIFT A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_WIN F  &kp G      &kp H        &hmr LEFT_WIN J  &hmr LEFT_CONTROL K  &hmr LEFT_ALT L  &hmr LEFT_SHIFT SEMICOLON
+&kp Z              &kp X            &kp C                &kp V            &kp B      &kp N        &kp M            &kp COMMA            &kp DOT          &kp FSLH
+                                                         &lt 2 TAB        &LTHUMB    &lt 4 SPACE  &lt 5 ENTER
             >;
         };
 
@@ -276,10 +276,10 @@
 
         adj {
             bindings = <
-&none         &none         &kp C_BRI_DEC  &kp C_BRI_UP  &none           &none        &none  &none  &none  &none
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4    &none        &none  &none  &none  &none
-&none         &none         &none          &none         &out OUT_TOG    &none        &none  &none  &none  &none
-                                           &bt BT_CLR    &bootloader     &bootloader  &none
+&none  &none  &none  &none       &none          &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4
+&none  &none  &none  &none       &none          &none         &kp C_BRI_INC  &kp C_BRIGHTNESS_DEC  &none         &none
+&none  &none  &none  &none       &none          &none         &none          &none                 &none         &out OUT_TOG
+                     &bt BT_CLR  &bootloader    &bootloader   &none
             >;
         };
 
@@ -305,7 +305,7 @@
             bindings = <
 &kp C_MUTE       &kp HOME    &kp UP      &kp END     &kp C_VOLUME_UP    &none  &none  &none  &none  &none
 &kp LC(LS(TAB))  &kp LEFT    &kp DOWN    &kp RIGHT   &kp LC(TAB)        &none  &none  &none  &none  &none
-&kp RET          &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp C_VOL_DN       &none  &none  &none  &none  &none
+&kp LEFT_SHIFT   &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp C_VOL_DN       &none  &none  &none  &none  &none
                                          &none       &none              &none  &none
             >;
         };
