@@ -82,7 +82,7 @@
 
         toSymb {
             bindings = <&mo 5>;
-            key-positions = <30 33>;
+            key-positions = <31 32>;
             timeout-ms = <150>;
             require-prior-idle-ms = <100>;
             slow-release;
