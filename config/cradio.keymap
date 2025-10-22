@@ -281,10 +281,10 @@
 
         oneHandMods {
             bindings = <
-&none         &none     &none      &none      &none    &none  &none      &none      &none     &none
-&sk LEFT_WIN  &sk LALT  &sk LCTRL  &sk LSHFT  &none    &none  &sk LSHFT  &sk LCTRL  &sk LALT  &sk LEFT_WIN
-&kp LEFT_WIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LEFT_WIN
-                                   &none      &none    &none  &none
+&none         &kp ESC   &kp LC(BSPC)  &kp BSPC   &none      &none          &kp BSPC   &kp LC(BSPC)  &kp ESC   &kp APOSTROPHE
+&sk LEFT_WIN  &sk LALT  &sk LCTRL     &sk LSHFT  &kp DEL    &kp DEL        &sk LSHFT  &sk LCTRL     &sk LALT  &sk LEFT_WIN
+&kp LEFT_WIN  &kp LALT  &kp LCTRL     &kp LSHFT  &kp RET    &kp LS(QMARK)  &kp LSHFT  &kp LCTRL     &kp LALT  &kp LEFT_WIN
+                                      &none      &none      &none          &none
             >;
         };
 
