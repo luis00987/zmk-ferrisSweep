@@ -203,6 +203,14 @@
             timeout-ms = <40>;
             require-prior-idle-ms = <100>;
         };
+
+        alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <11 12 13>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
     };
 
     keymap {
