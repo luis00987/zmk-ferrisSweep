@@ -206,6 +206,14 @@
 
         alt {
             bindings = <&kp LEFT_ALT>;
+            key-positions = <21 22 23>;
+            timeout-ms = <150>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+        };
+
+        oneShotMods {
+            bindings = <&sl 7>;
             key-positions = <11 12 13>;
             timeout-ms = <150>;
             slow-release;
