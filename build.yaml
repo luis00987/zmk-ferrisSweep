@@ -19,15 +19,3 @@ include:
     shield: cradio_right
   - board: nice_nano_v2
     shield: settings_reset
-
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          # ESTO es lo importante para descargar ZMK
-          submodules: true 
-          fetch-depth: 0
