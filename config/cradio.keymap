@@ -299,10 +299,10 @@
 
         leftNav-Media {
             bindings = <
-&kp LC(W)        &kp HOME    &kp UP      &kp END     &kp C_VOLUME_UP    &none  &none  &none  &none  &none
+&none            &kp HOME    &kp UP      &kp END     &kp C_VOLUME_UP    &none  &none  &none  &none  &none
 &kp LC(LS(TAB))  &kp LEFT    &kp DOWN    &kp RIGHT   &kp LC(TAB)        &none  &none  &none  &none  &none
 &kp LEFT_SHIFT   &kp C_PREV  &kp C_PLAY  &kp C_NEXT  &kp C_VOL_DN       &none  &none  &none  &none  &none
-                                         &kp C_MUTE  &none              &none  &none
+                                         &none       &none              &none  &none
             >;
         };
     };
